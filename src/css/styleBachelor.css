@@ -1,0 +1,174 @@
+#main-bachelor {
+    flex: 1 0 auto; /* Pousse le footer vers le bas */
+    padding: 100px 10%; /* Ajusté pour centrer le contenu */
+    text-align: center;
+}
+
+#title-bachelor {
+    color: #475465;
+    text-align: left;
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+#desc-bachelor {
+    color: #475465;
+    text-align: justify;
+    margin: 25px auto;
+}
+
+.option {
+    display: flex;
+    justify-content: center; /* Centre les deux blocs horizontalement */
+    gap: 40px;               /* Espace entre les deux blocs */
+    margin-top: 50px;
+    align-items: stretch;    /* Force les blocs à avoir la même hauteur */
+}
+
+#reseaux, #dev {
+    flex: 1;                 /* Les deux blocs prennent la même largeur */
+    max-width: 600px;        /* Empêche qu'ils deviennent trop larges */
+    min-height: 525px;
+    border: 2px solid #475465;
+    background-color: #475465;
+    padding: 40px;
+    text-align: left;
+    box-sizing: border-box;  /* Crucial pour que le padding ne casse pas la ligne */
+}
+
+#title-reseaux, #title-dev {
+    text-align: center;
+    color:  #B6CDE8;
+    margin-bottom: 40px;
+    font-size: xx-large;
+    border-bottom: 5px solid  rgba(182, 205, 232, 0.7);
+}
+
+#reseaux p, #dev p {
+    margin: 10px;
+    color:#B6CDE8;
+}
+
+#reseaux ul, #dev ul {
+    display: block;
+    padding-left: 50px;
+    color:#B6CDE8;
+}
+
+#reseaux li, #dev li {
+    color:#B6CDE8;
+}
+
+#reseaux span, #dev span {
+    font-weight: bold;
+    color:#B6CDE8;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1850px) {
+    #title-bachelor{
+        font-size: x-large;
+    }
+    
+    #desc-bachelor{
+        font-size: medium;
+    }
+
+    .paragraphe, .list, .paragraphe span{
+        font-size: medium;
+    }
+
+    #title-reseaux, #title-dev{
+        font-size: large !important;
+    }
+
+}
+
+@media screen and (max-width: 1330px) {
+    .paragraphe, .list, .paragraphe span{
+        font-size: small;
+    }
+
+    #title-reseaux, #title-dev{
+        font-size: medium !important;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    body{
+        letter-spacing: 1px;
+    }
+
+    .option {
+        flex-direction: column; /* Aligne les blocs verticalement sur tablette/mobile */
+        align-items: center;
+    }
+    
+    #reseaux, #dev {
+        width: 100%; /* Prend toute la largeur disponible */
+        max-width: 100%;
+        min-height: auto; /* Laisse le bloc s'adapter au texte */
+    }
+
+    #main-bachelor {
+        padding: 50px 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #title-bachelor{
+        font-size: large;
+    }
+    
+    #desc-bachelor{
+        font-size: small;
+    }
+    .paragraphe, .list, .paragraphe span{
+        font-size: x-small;
+    }
+
+    #title-reseaux, #title-dev{
+        font-size: small !important;
+    }
+
+    .ul-list{
+        padding-left: 25px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #reseaux, #dev {
+        padding: 15px;
+    }
+
+    #reseaux ul, #dev ul {
+        padding-left: 25px;
+    }
+}
+
+@media screen and (max-width: 425px) {    
+    
+    #desc-bachelor{
+        font-size: x-small;
+    }
+    
+    .paragraphe, .list, .paragraphe span{
+        font-size: xx-small;
+    }    
+
+    #title-reseaux, #title-dev{
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 375px) {  
+    #desc-bachelor{
+        font-size: xx-small;
+    }  
+    .paragraphe, .list, .paragraphe span{
+        font-size: 7px;
+    }
+}

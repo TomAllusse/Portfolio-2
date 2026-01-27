@@ -1,0 +1,235 @@
+#contact {
+    width: 100%;
+    display: flex;
+}
+
+.contactBoxForm, .contactBoxInfo {
+    width: 50%;
+    height: auto;
+}
+
+.contactBoxInfo{
+    background: #475465;
+}
+
+.contactBoxForm {
+    border-bottom: 5px solid #475465;
+    z-index: 0;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+h1 span img {
+    width: 40px;
+    position: relative;
+    top: 10px;
+}
+
+/* FORM CONTACT */
+
+.contactTitleForm {
+    color: #475465;
+    padding: 25px 0;
+    border-top: 5px;
+    border-bottom: 5px;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+    border-color: #475465;
+}
+
+.contactForm {
+    padding: 25px;
+}
+
+.emailInp, textarea, .surnameInp, .firstnameInp, .objectInp{
+    display: block;
+    margin: 20px auto;
+    outline: 0;
+    background: none;
+    width: 95%;
+    border: 0;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.emailInp, .surnameInp, .firstnameInp, .objectInp{
+    border-bottom: 2.5px solid #475465;
+}
+
+textarea{
+    border: 2.5px solid #475465;
+}
+
+.labelEmail, .labelTxt, .labelFirstName , .labelSurname, .labelObject {
+    color: #475465;
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+    position: relative;
+    top: 7px;
+    text-align: center;
+}
+
+button {
+    width: 45%;
+    background: #B6CDE8;
+    display: block;
+    margin: 45px auto 0 auto;
+    outline: none;
+    border: 0;
+    height: 50px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+button:hover {
+    background: lightgreen;
+}
+
+/* INFO CONTACT */
+
+.contactTitle {
+    color: #B6CDE8;
+    padding: 25px 0;
+}
+
+.contactInfo {
+    padding: 25px;
+}
+
+.contactPhone, .contactEmail, .contactAddress, iframe {
+    display: block;
+    font-size: 20px;
+    margin: 50px auto;
+    position: relative;
+    top: 7px;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    color: #B6CDE8;
+}
+
+.contactPhone{
+    margin-top: 0;
+}
+
+.contactAddress {
+    font-style: italic;
+}
+
+.contactInfo iframe {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* RESPONSIVE */
+
+/* --- Télévision (max 1920px) --- */
+@media screen and (min-width: 1920px) {
+
+    /* FORM CONTACT */
+
+    .emailInp, textarea, .surnameInp, .firstnameInp, .objectInp{
+        font-size: 20px;
+    }
+
+    .labelEmail, .labelTxt, .labelFirstName , .labelSurname, .labelObject {
+        font-size: 30px;
+    }
+
+    button {
+        height: 70px;
+        font-size: 30px;
+    }
+
+    /* INFO CONTACT */
+
+    .contactPhone, .contactEmail, .contactAddress, iframe {
+        font-size: 30px;
+    }
+
+    .contactInfo iframe {
+        height: 600px;
+    }
+
+}
+
+
+
+/* --- Tablettes / Petits Ordis (max 1024px) --- */
+@media screen and (max-width: 1024px) {
+    /* Titre plus petit pour éviter qu'il soit coupé */
+    h1 {
+        font-size: 28px;
+    }
+
+    /* L'avion dans le titre s'adapte */
+    h1 span img {
+        width: 30px;
+        top: 5px;
+    }
+
+    /* On réduit un peu les marges internes pour que ça rentre mieux */
+    .contactForm, .contactInfo {
+        padding: 15px;
+    }
+}
+
+/* --- Tablettes Portrait (max 768px) --- */
+@media screen and (max-width: 768px) {
+
+    /* On change la direction du flex : vertical */
+    #contact {
+        flex-direction: column;
+    }
+
+    /* Les boites prennent toute la largeur */
+    .contactBoxForm, .contactBoxInfo {
+        width: 100%;
+    }
+
+    /* La bordure du formulaire sert maintenant de séparation horizontale */
+    .contactBoxForm {
+        border-bottom: 5px solid #475465;
+    }
+
+    /* On réduit la hauteur de la map pour pas qu'elle prenne tout l'écran */
+    .contactInfo iframe {
+        height: 350px;
+    }
+    
+    /* Ajustement des inputs pour utiliser l'espace */
+    .emailInp, textarea, .surnameInp, .firstnameInp, .objectInp {
+        width: 98%; /* Presque 100% pour éviter les soucis de padding */
+    }
+}
+
+/* --- ÉTAPE 3 : Mobiles (max 425px) --- */
+@media screen and (max-width: 425px) {
+
+    /* Le bouton devient large pour être cliquable facilement au doigt */
+    button {
+        width: 100%;
+        margin-top: 25px;
+        height: 55px; /* Un peu plus haut pour le tactile */
+    }
+
+    /* On réduit les marges des infos pour gagner de la place verticale */
+    .contactPhone, .contactEmail, .contactAddress, iframe {
+        margin: 25px auto;
+        font-size: 16px; /* Texte un peu plus petit */
+    }
+
+    /* La carte encore un peu moins haute sur mobile */
+    .contactInfo iframe {
+        height: 250px;
+    }
+}

@@ -1,0 +1,280 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Alice", sans-serif;
+    color: #000;
+    text-transform: uppercase;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Utilise vh au lieu de % pour éviter les bugs de hauteur */
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;  
+}
+
+body{
+    background: #EEEDFF;
+    justify-content: center;
+}
+
+textarea{
+    resize: none;
+}
+
+/* NAVBAR */
+
+nav {
+    flex-shrink: 0;
+    position: relative;
+    height: 70px;
+    width: 100%;
+    z-index: 10;
+    background: #B6CDE8;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.list-nav {
+    width: 100%;
+    height: 100%;
+    text-align: right;
+}
+
+.item-nav {
+    display: inline-block;
+    align-items: center;
+    font-size: 30px;
+    margin: 0 20px;
+    color: #475465;
+}
+
+.item-nav a {
+    text-decoration: none;
+    color: #475465;
+    display: block;
+    padding: 10px 15px;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.informations-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #B6CDE8;
+    min-width: 200px;
+    z-index: 10;
+}
+
+.dropdown:hover .informations-nav {
+    display: block; /* Affiche au survol */
+}
+
+.drop-item a {
+    padding: 12px;
+    font-size: 0.5em;
+}
+
+.drop-item a:hover {
+    background-color: #EEEDFF;
+    color: #475465;
+    border: none;
+}
+
+.link-nav {
+    text-decoration: none;
+    border-bottom: 1px solid #B6CDE8;
+    transition: border-bottom 0s ease-out;
+    cursor : pointer;
+}
+
+.link-nav:hover{
+    border-color: #475465;
+    border-style: solid;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 2px;
+}
+
+.btn-toggle-container {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: none;
+}
+
+.btn-toggle-container img {
+    width: 40px;
+    cursor: pointer;
+}
+
+.active{
+    display: none;
+}
+
+/* FOOTER */
+
+footer{
+    height: 70px;
+    width: 100%; 
+    line-height: 70px;
+    font-size: 15px;
+    padding: 0 20px;
+    background:#B6CDE8;
+    color:#475465;
+    text-align: right;
+    margin-top: auto;
+    flex-shrink: 0; /* Empêche le footer de s'écraser */
+}
+
+/* RESPONSIVE */
+
+/* --- Télévision (max 1920px) --- */
+@media screen and (min-width: 1920px) {
+    nav {
+        height: 100px;
+    }
+
+    .item-nav {
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    /* NAVBAR */
+
+    nav {
+        height: 70px;
+        width: 100%;
+    }
+
+    .list-nav {
+        width: 100%;
+        height: 100%;
+        text-align: right;
+    }
+
+    .item-nav {
+        display: inline-block;
+        line-height: 70px;
+        font-size: 30px;
+        margin: 0 20px;
+        text-align: center;
+    }
+
+    .item-nav a {
+        color: #B6CDE8;
+    }
+
+    .informations-nav {
+        background: #475465;
+        width: 100%;
+    }
+
+    .link-nav {
+        text-decoration: none;
+        transition: border-bottom 0s ease-out;
+        color: #B6CDE8;
+        font-size: 0.5em;
+    }
+
+    .drop-item a{
+        font-size: 0.3em;
+    }
+
+    .link-nav:hover{
+        border-color: #000;
+        border-style: solid;
+        border-top-width: 0;
+        border-left-width: 0;
+        border-right-width: 0;
+        border-bottom-width: 2px;
+    }
+
+    .active{
+        display: none;
+    }
+
+    .btn-toggle-container {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        display: none;
+    }
+
+    .btn-toggle-container img {
+        width: 40px;
+        cursor: pointer;
+    }
+
+    .btn-toggle-container {
+        display: block;
+    }
+
+    .list-nav {
+        position: relative;
+        top: 70px;
+        display: none;
+    }
+
+    .item-nav {
+        display: block;
+        background-color: #475465;
+        margin: 0;
+    }
+
+    nav.active-menu{
+        background-color: #475465;
+        border-bottom: 1px solid #000;
+    }
+
+    .list-nav.active-menu {
+        display: block;
+    }
+
+    .inactive.active-menu{
+        display: none;
+    }
+
+    .active.active-menu{
+        display: block;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+
+}
+
+/* --- ÉTAPE 3 : Mobiles (max 425px) --- */
+@media screen and (max-width: 425px) {
+    .link-nav {
+        text-decoration: none;
+        transition: border-bottom 0s ease-out;
+        color: #B6CDE8;
+        font-size: 0.4em;
+    }
+
+    .drop-item a{
+        font-size: 0.25em;
+    }
+
+    footer {
+        height: 50px;
+        width: 100%; 
+        line-height: 50px;
+        font-size: 5px;
+    }
+}

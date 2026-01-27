@@ -1,0 +1,93 @@
+/* INFORMATION */
+
+.information{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    max-height: 750px;
+    padding: 50px;
+    align-items: center;
+}
+
+.information h1{
+    letter-spacing: 0.05px;  
+    font-size: 2.5em;
+}
+
+.information article{
+    padding: 15px;
+    font-size: 1em;
+    color: #B6CDE8;
+}
+
+.information a{
+    display: flex;
+    text-decoration: none;
+    width: max-content;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1em;
+    color: #B6CDE8;
+    border: 5px double #B6CDE8;
+}
+
+.information a:hover{
+    border: 5px solid #B6CDE8;
+}
+
+.desc{
+    max-width: 100%;
+    width: auto;
+    margin: 50px;
+    padding: 25px;
+    background: #475465;
+    border: 4px solid #39424d;
+    border-radius:5px;
+}
+
+/* RESPONSIVE */
+
+/* --- Tablettes / Petits Ordis (max 1024px) --- */
+@media screen and (max-width: 1024px) {
+    .information {
+        padding: 30px 20px;
+    }
+
+    .desc {
+        margin: 30px 20px;
+        padding: 15px 10px;
+    }
+
+    .information h1{
+        font-size: 1.25em;
+    }
+
+    .information article, .information a {
+        font-size: 0.7em; /* Texte plus lisible sur petit écran */
+    }
+
+}
+
+/* --- (max 768px) --- */
+@media screen and (max-width: 768px) {
+
+    .information h1{
+        font-size: 1em;
+    }
+
+    .information article, .information a {
+        font-size: 0.6em;
+    }
+
+}
+
+/* --- ÉTAPE 3 : Mobiles (max 425px) --- */
+@media screen and (max-width: 425px) {
+    .information h1 {
+        font-size: 0.8em;
+    }
+
+    .information article, .information a{
+        font-size: 0.5em;
+    }
+}

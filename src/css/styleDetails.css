@@ -1,0 +1,85 @@
+/* INFORMATION */
+
+.information{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    max-height: 750px;
+    padding: 50px;
+    align-items: center;
+}
+
+.information h1{
+    font-size: 2em;
+}
+
+.information p{
+    padding: 15px;
+    font-size: 1em;
+    color: #475465;
+}
+
+.information a{
+    text-decoration: none;
+    width: max-content;
+    padding: 5px;
+    margin: 10px;
+    font-size: 1em;
+    font-weight: bolder;
+    color: #475465;
+    border-width: 0;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #475465;
+    cursor: pointer;
+}
+
+.information a:hover{
+    color: #B6CDE8;
+    border-width: 0;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #B6CDE8;
+}
+
+/* RESPONSIVE */
+
+/* --- Tablettes / Petits Ordis (max 1024px) --- */
+@media screen and (max-width: 1024px) {
+    .information {
+        padding: 30px 20px;
+    }
+
+    .information h1{
+        font-size: 1.25em;
+    }
+
+    .information p {
+        font-size: 0.7em; /* Texte plus lisible sur petit écran */
+    }
+
+}
+
+/* --- (max 768px) --- */
+@media screen and (max-width: 768px) {
+
+    .information h1{
+        font-size: 1em;
+    }
+
+    .information p {
+        font-size: 0.6em;
+    }
+
+}
+
+/* --- ÉTAPE 3 : Mobiles (max 425px) --- */
+@media screen and (max-width: 425px) {
+    .information h1 {
+        font-size: 0.8em;
+    }
+
+    .information p{
+        font-size: 0.5em;
+    }
+}
