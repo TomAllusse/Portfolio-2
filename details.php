@@ -12,15 +12,255 @@
     <?php
         include_once "src/layout/navbar.php";
     ?>
-    <div class="information">
-        <p>Diplômé du BTS SIO (Services Informatiques aux Organisations) au Lycée Joseph-Marie Carriat, j'ai rejoint l’IPSSI en 2e année de Bachelor Informatique, Cybersécurité et IA. J’ai pour but d’obtenir un diplôme Bachelor IA, développement Fullstack DevOps en 2027, puis de suivre une formation Mastère ou Master.</p>
-        <p>Je recherche un stage de 4 mois minimum, à partir du 11 mai jusqu'au 2 octobre, avec la possibilité de poursuivre en alternance.</p>
-        <p>J'ai choisi de me spécialiser dans le développement Web et le développement d'applications mobiles et Web. Durant mon cursus, j'ai acquis une maîtrise des langages de programmation en Web (HTML, PHP, CSS, JavaScript, SQL, C#), objet (PHP, C#), logiciel (C#, C++) ainsi que des frameworks (Angular) et outils associés (Visual Studio).</p>
-        <p>Mon expérience pratique comprend également des stages au sein de 2 structures, où j'ai pu mettre en œuvre mes compétences tout en m'adaptant aux besoins spécifiques de chaque projet. Ces mises en situation m'ont permis de développer ma capacité à travailler en équipe, à résoudre des problèmes de manière autonome et à respecter les délais impartis pour mener à bien mes projets. Au cours de mes différents stages, j'ai pu mettre en avant ma motivation, mon sérieux, mon autonomie et mon implication dans mon travail.</p>
-        <p>Pour les aspects plus techniques ou les langages de programmation, je suis convaincu que cette 2e année de Bachelor me permettra de renforcer mes connaissances et de me préparer à répondre efficacement aux missions futures demandées pour mes stages et mes alternances.</p>
-        <p>En parallèle, je mène un projet pour une boutique de vêtements indépendante qui souhaite améliorer sa visibilité. Je conçois pour elle un site vitrine.</p>
-        <p>Je joins également un lien vers les projets que j’ai réalisés durant mes deux années du BTS SIO : <a href="https://drive.google.com/drive/u/1/folders/1McIeOFuTbcx_78pIz6PhcBp5hyykGLx8">Cliquez ici</a></p>
-    </div> 
+    <section class="section-competences">
+        <h4 class="tag">Compétences</h4>
+        <h1>Compétences <span>Acquise</span></h1>
+        <div class="cards">
+            <!-- Développement web et d'application -->
+            <div class="card">
+                <div class="icon">💻</div>
+                <h2>Développement web et d'application</h2>
+
+                <div class="competence">
+                    <div class="competence-ligne">
+                        <span>HTML</span>
+                        <span>🌕🌕🌕🌕🌑</span>
+                    </div>
+                    <div class="bar"><div style="width: 80%;"></div></div>
+                </div>
+
+                <div class="competence">
+                    <div class="competence-ligne">
+                        <span>CSS</span>
+                        <span>🌕🌕🌕🌑🌑</span>
+                    </div>
+                    <div class="bar"><div style="width: 60%;"></div></div>
+                </div>
+
+                <div class="competence">
+                    <div class="competence-ligne">
+                        <span>Javascript</span>
+                        <span>🌕🌕🌗🌑🌑</span>
+                    </div>
+                    <div class="bar"><div style="width: 50%;"></div></div>
+                </div>
+
+                <div class="competence">
+                    <div class="competence-ligne">
+                        <span>PHP</span>
+                        <span>🌕🌕🌕🌑🌑</span>
+                    </div>
+                    <div class="bar"><div style="width: 60%;"></div></div>
+                </div>
+
+                <div class="competence">
+                    <div class="competence-ligne">
+                        <span>C++</span>
+                        <span>🌕🌕🌗🌑🌑</span>
+                    </div>
+                    <div class="bar"><div style="width: 50%;"></div></div>
+                </div>
+
+                <div class="competence">
+                    <div class="competence-ligne">
+                        <span>C#</span>
+                        <span>🌕🌕🌗🌑🌑</span>
+                    </div>
+                    <div class="bar"><div style="width: 50%;"></div></div>
+                </div>
+                <div class="competence">
+                    <div class="competence-ligne">
+                        <span>Python</span>
+                        <span>🌕🌕🌑🌑🌑</span>
+                    </div>
+                    <div class="bar"><div style="width: 40%;"></div></div>
+                </div>
+                <div class="competence">
+                    <div class="competence-ligne">
+                        <span>Base de données</span>
+                        <span>🌕🌕🌕🌑🌑</span>
+                    </div>
+                    <div class="bar"><div style="width: 60%;"></div></div>
+                </div>
+            </div>
+
+            <!-- Logiciels -->
+            <div class="card">
+                <div class="icon">🛠️</div>
+                <h2>Logiciels</h2>
+
+                <div class="competence">
+                    <div class="competence-ligne">
+                        <span>Microsoft Teams</span>
+                        <span>🌕🌕🌕🌕🌗</span>
+                    </div>
+                    <div class="bar"><div style="width: 90%;"></div></div>
+                </div>
+
+                <div class="competence">
+                    <div class="competence-ligne">
+                        <span>Git, Github</span>
+                        <span>🌕🌕🌕🌑🌑</span>
+                    </div>
+                    <div class="bar"><div style="width: 60%;"></div></div>
+                </div>
+
+                <div class="competence">
+                    <div class="competence-ligne">
+                        <span>GitLab</span>
+                        <span>🌕🌕🌕🌑🌑</span>
+                    </div>
+                    <div class="bar"><div style="width: 60%;"></div></div>
+                </div>
+
+                <div class="competence">
+                    <div class="competence-ligne">
+                        <span>Visual Studio</span>
+                        <span>🌕🌕🌕🌕🌑</span>
+                    </div>
+                    <div class="bar"><div style="width: 80%;"></div></div>
+                </div>
+
+                <div class="competence">
+                    <div class="competence-ligne">
+                        <span>Xampp</span>
+                        <span>🌕🌕🌕🌗🌑</span>
+                    </div>
+                    <div class="bar"><div style="width: 70%;"></div></div>
+                </div>
+
+                <div class="competence">
+                    <div class="competence-ligne">
+                        <span>Netbeans</span>
+                        <span>🌕🌕🌑🌑🌑</span>
+                    </div>
+                    <div class="bar"><div style="width: 40%;"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-formations">
+        <h4 class="tag">Formation</h4>
+        <h1>Mon <span>parcours</span></h1>
+        <div class="formations">
+
+            <!-- BAC -->
+            <div class="formation-div gauche">
+                <div class="card2 green">
+                    <h2 class="year">2020 - 2021</h2>
+                    <h2 class="status green-s">Completed</h2>
+                    <h3>Baccalauréat Sciences et technologies de l'industrie et du développement durable</h3>
+                    <h3>Systèmes d'Information et Numérique</h3>
+                    <p class="school">Lycée Joseph-Marie Carriat</p>
+                    <p>Formation en sciences et technologies de l'industrie et du développement durable enseignement spécifique systèmes d'information et numérique</p>
+                </div>
+            </div>
+
+            <!-- Icon -->
+            <div class="icon2">
+                🎓
+            </div>
+
+            <!-- BUT -->
+            <div class="formation-div droite">
+                <div class="card2 blue">
+                    <h2 class="year">2021 - 2022</h2>
+                    <h2 class="status blue-s">Réorientaion</h2>
+                    <h3>BUT INFORMATIQUE</h3>
+                    <p class="school">IUT LYON1</p>
+                    <p>1ère année de formation en informatique</p>
+
+                    <ul class="points">
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>React, SQL's databases, APIs</li>
+                        <li>Project management and best practices</li>
+                        <li>Solo projects, team projects, and internships</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Icon -->
+            <div class="icon2">
+                🧭
+            </div>
+
+            <!-- BTS -->
+            <div class="formation-div gauche">
+                <div class="card2 green">
+                    <h2 class="year">2022 - 2024</h2>
+                    <h2 class="status green-s">Completed</h2>
+                    <h3>BTS Services Informatiques aux Organisations</h3>
+                    <h3>option B Solutions Logicielles et Applications Métiers</h3>
+                    <p class="school">Lycée Joseph-Marie Carriat</p>
+                    <p>Formation en développement d'applications et solutions logicielles</p>
+                </div>
+            </div>
+
+            <!-- Icon -->
+            <div class="icon2">
+                🎓
+            </div>
+
+            <!-- Bachelor -->
+            <div class="formation-div droite">
+                <div class="card2 blue">
+                    <h2 class="year">2025 - 2027</h2>
+                    <h2 class="status purple-s">En cours</h2>
+                    <h3>Bachelor informatique et développement</h3>
+                    <p class="school">Grande école d'informatique, Lyon IPSSI</p>
+                    <p>Formation en 2ème année informatique, cybersécurité et IA</p>
+                </div>
+            </div>
+
+            <!-- Icon -->
+            <div class="icon2">
+                ⏳
+            </div>
+
+            <!-- Final objective card -->
+            <div class="formation-end">
+                <div class="final-card">
+                    <h2 class="year">2027 - 2029</h2>
+                    <h2 class="status yellow-s">Objectif</h2>
+                    <h3>Mastère BigData, dev. & Intelligence Artificielle</h3>
+                    <p class="school">Grande école d'informatique, Lyon IPSSI</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="section-liens">
+        <div class="gauche">
+            <h4 class="tag gauche">Link</h4>
+            <div>
+                <div class="lien-item">
+                    <span class="github"></span>
+                    <a href="https://github.com/TomAllusse?tab=repositories">GITHUB</a>
+                </div>
+                <div class="lien-item">
+                    <span class="drive"></span>
+                    <a href="https://drive.google.com/drive/folders/1McIeOFuTbcx_78pIz6PhcBp5hyykGLx8">Drive</a>
+                </div>
+                <div class="lien-item">
+                    <span class="linkedIn"></span>
+                    <a href="https://www.linkedin.com/in/tom-allusse-ba4490261/">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="droite">
+            <h4 class="tag gauche">Fichier</h4>
+            <div>
+                <div class="lien-item">
+                    <span class="pdf"></span>
+                    <a href="src/pdf/Allusse-Tom-cv.pdf"><span></span>CV</a>
+                </div>
+                <div class="lien-item">
+                    <span class="pdf"></span>
+                    <a href="src/pdf/lettre-motivation.pdf"><span></span>lettre de motivation</a>
+                </div>
+            </div>
+        </div>
+    </section>
     <?php
         include_once "src/layout/footer.php";
     ?>

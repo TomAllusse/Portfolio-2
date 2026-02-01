@@ -1,85 +1,519 @@
-/* INFORMATION */
+.section-competences {
+    text-align: center;
+    padding: 140px 20px 50px 20px;
+}
 
-.information{
+.section-competences h1, .section-formations h1 {
+    font-size: 55px;
+    margin: 20px 0;
+}
+
+.section-competences h1 span, .section-formations h1 span {
+    color: #3c7df0;
+}
+
+.tag {
+    display: inline-block;
+    background: #B6CDE8;
+    color: #EEEDFF;
+    padding: 12px 26px;
+    border-radius: 28px;
+    font-size: 16px;
+}
+
+/* --- CARDS --- */
+.cards {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    background: #B6CDE8;
+    text-align: center;
+    width: 750px;
+    padding: 50px;
+    border-radius: 26px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.card .icon {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Icônes encore agrandies */
+.icon {
+    width: 80px;
+    height: 80px;
+    background: #EEEDFF;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    margin-bottom: 28px;
+    color: #B6CDE8;
+}
+
+.competence {
+    margin-bottom: 35px;
+    font-size: 20px;
+}
+
+.competence-ligne {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.competence-ligne span {
+    float: none;
+}
+
+.competence span:first-child {
+    float: left;
+}
+
+.competence span:last-child {
+    float: right;
+}
+
+.competence::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* --- PROGRESS BAR --- */
+.bar {
+    width: 100%;
+    height: 16px;
+    background: #8C61BA;
+    border-radius: 10px;
+    margin-top: 12px;
+    overflow: hidden;
+}
+
+.bar div {
+    height: 100%;
+    background: #FFE287;
+    /* background: #3c7df0; */
+    border-radius: 10px;
+}
+
+.blue div {
+    background: #3c7df0;
+}
+
+.purple div {
+    background: #8C61BA;
+}
+
+/* Formation */
+.section-formations {
+    width: 95%;
+    margin: 50px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.intro {
+    color: #666;
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+
+/* ----- formation ----- */
+
+.formations {
     position: relative;
     width: 100%;
-    max-width: 100%;
-    max-height: 750px;
-    padding: 50px;
-    align-items: center;
 }
 
-.information h1{
-    font-size: 2em;
+.formations::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    height: 91.5%;
+    background: linear-gradient(#B6CDE8, #3c7df0);
+    transform: translateX(-50%);
+    border-radius: 10px;
 }
 
-.information p{
-    padding: 15px;
-    font-size: 1em;
-    color: #475465;
+/* Items */
+
+.formation-div {
+    width: 50%;
+    margin-bottom: 80px;
+    position: relative;
 }
 
-.information a{
-    text-decoration: none;
+.formation-div.gauche {
+    left: 0;
+    text-align: left;
+}
+
+.formation-div.droite {
+    left: 50%;
+    text-align: left;
+}
+
+/* Cards */
+
+.card2 {
+    background: #B6CDE8;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    width: 85%;
+    position: relative;
+}
+
+.card2.blue {
+    border-left: 5px solid #3c7df0;
+    margin: 5%;
+    top: 50px;
+}
+
+.card2.green {
+    border-left: 5px solid #2ecc71;
+}
+
+.year {
+    display: inline-block;
     width: max-content;
-    padding: 5px;
-    margin: 10px;
-    font-size: 1em;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.status {
+    float: right;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.green-s {
+    background: #2ecc71;
+}
+
+.blue-s {
+    background: #3c7df0;
+}
+
+.purple-s {
+    background: #8C61BA;
+}
+
+.yellow-s {
+    background: #e9b416;
+}
+
+.school {
+    color: #3c7df0;
+    margin: 15px 0;
+}
+
+.points {
+    margin-top: 10px;
+}
+
+.points li {
+    margin: 6px 50px;
+}
+
+/* Icons between cards */
+
+.icon2 {
+    position: relative;
+    bottom: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 26px;
+    margin-bottom: 60px;
+    background: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    line-height: 55px;
+}
+
+/* Final card */
+
+.formation-end {
+    margin-top: 70px;
+    text-align: left;
+}
+
+.final-card {
+    width: 55%;
+    margin: auto;
+    padding: 30px;
+    color: white;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #3c7df0, #B6CDE8);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Lien */
+
+.section-liens {
+    display: flex;
+    text-align: center;
+    padding: 50px;
+}
+
+.section-liens .gauche {
+    width: 50%;
+    left: 0;
+}
+
+.section-liens .droite {
+    width: 50%;
+    right: 0;
+}
+
+.lien-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    padding: 10px;
+    margin: 25px auto;
+}
+
+.github, .linkedIn, .drive, .pdf {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.github   { background-image: url(../svg/github.svg); }
+.linkedIn { background-image: url(../svg/linkedin.svg); }
+.drive    { background-image: url(../svg/drive.svg); }
+.pdf      { background-image: url(../svg/pdf.svg); }
+
+.section-liens a {
+    text-decoration: none;
     font-weight: bolder;
-    color: #475465;
-    border-width: 0;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #475465;
-    cursor: pointer;
+    padding: 10px;
 }
 
-.information a:hover{
-    color: #B6CDE8;
-    border-width: 0;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #B6CDE8;
+.section-liens a:hover {
+    color: #EEEDFF;
+    border-radius: 5px;
+    background: #3c7df0;
 }
 
-/* RESPONSIVE */
 
-/* --- Tablettes / Petits Ordis (max 1024px) --- */
-@media screen and (max-width: 1024px) {
-    .information {
-        padding: 30px 20px;
+/* ===============================
+   Responsive pour tablettes
+================================ */
+@media (max-width: 1024px) {
+    /* SKILLS SECTION */
+    .section-competences h1, .section-formations h1 {
+        font-size: 42px;
     }
 
-    .information h1{
-        font-size: 1.25em;
+    .icon {
+        width: 60px;
+        height: 60px;
+        font-size: 28px;
     }
 
-    .information p {
-        font-size: 0.7em; /* Texte plus lisible sur petit écran */
+    .competence {
+        font-size: 18px;
+    }
+
+    .bar {
+        height: 14px;
+    }
+
+    /* formation */
+    .formation-div {
+        width: 100%;
+        left: 0 !important;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .card2 {
+        width: 90%;
+        margin: 0;
+        top: 0 !important;
+    }
+
+    .card2.blue{
+        margin: 0;
+        border: 2.5px solid #3c7df0;;
+    }
+    
+    .card2.green {
+        margin: 0;
+        border: 2.5px solid #2ecc71;
+    }
+
+    .icon2 {
+        bottom: 180px;
+        font-size: 22px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        opacity: 0;
+    }
+
+    .final-card {
+        margin: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .section-liens {
+        display: inline-block;
+    }
+
+    .section-liens .gauche, .section-liens .droite {
+        width: auto;
+    }
+
+    .section-formations {
+        width: 100%;
+        margin: 0;
+        padding: 25px;
+    }
+
+    .card2 {
+        width: 100%;
     }
 
 }
 
-/* --- (max 768px) --- */
-@media screen and (max-width: 768px) {
-
-    .information h1{
-        font-size: 1em;
+/* ===============================
+   Responsive pour téléphones
+================================ */
+@media (max-width: 768px) {
+    /* SKILLS SECTION */
+    .section-competences h1, .section-formations h1 {
+        font-size: 32px;
+    }
+    
+    .cards {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .information p {
-        font-size: 0.6em;
+    .card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+
+    .competence {
+        font-size: 16px;
+    }
+
+    .bar {
+        height: 12px;
+    }
+
+    /* formation */
+
+    .formation-div {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .icon2 {
+        bottom: 150px;
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
     }
 
 }
 
-/* --- ÉTAPE 3 : Mobiles (max 425px) --- */
-@media screen and (max-width: 425px) {
-    .information h1 {
+/* ===============================
+   Responsive pour petit téléphones
+================================ */
+@media (max-width: 425px) {
+    .section-competences h1, .section-formations h1 {
+        font-size: 20px;
+    }
+    .section-competences {
+        padding: 50px 20px 50px 20px;
+    }
+    .competence span:last-child {
+        display: none;
+    }
+
+    .card h2 {
+        font-size: 16px;
+    }
+
+    .competence {
+        font-size: 12px;
+    }
+    
+    .section-formations {
+        padding: 15px;
+    }
+
+    .status {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .card2.blue, .card2.green {
+        padding: 10px;
+    }
+
+    .formation-div h3 {
+        font-size: 16px;
+    }
+    
+    .school, .formation-div p, .points li {
+        font-size: 12px
+    }
+
+    .section-liens {
+        padding: 25px;
+    }
+
+    .github, .linkedIn, .drive, .pdf {
+        width: 25px;
+        height: 25px;
+    }
+
+    .section-liens a {
         font-size: 0.8em;
     }
 
-    .information p{
-        font-size: 0.5em;
-    }
+    
 }
