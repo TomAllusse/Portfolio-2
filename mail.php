@@ -26,8 +26,8 @@ try {
     $mail->SMTPAuth   = true;
     $mail->Username   = $_ENV['SMTP_USER']; 
     // On récupère le mot de passe depuis le .env
-    $mail->Password   = $_ENV['SMTP_PASSWORD']; 
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; 
+    $mail->Password   = $_ENV['SMTP_PASSWORD'];
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = $_ENV['SMTP_PORT'];
 
     $mail->setFrom($_ENV['SMTP_USER'], 'Portfolio - ' . $prenom . ' ' . $nom);

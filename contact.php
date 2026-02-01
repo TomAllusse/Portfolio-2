@@ -37,11 +37,11 @@
                 <input type="email" name="email" id="email" class="emailInp" required maxlength="50" placeholder="Entrez votre email">
                 <div>
                     <label for="prenom" class="labelFirstName">Prénom</label>
-                    <input type="text" name="prenom" id="prenom" required maxlength="35"class="firstnameInp"placeholder="Entrez votre prénom">
+                    <input type="text" name="prenom" id="prenom" required maxlength="35" class="firstnameInp" placeholder="Entrez votre prénom">
                 </div>
                 <div>
                     <label for="nom" class="labelSurname">Nom</label>
-                    <input type="text" name="nom" id="nom" required maxlength="35"class="surnameInp" placeholder="Entrez votre nom">
+                    <input type="text" name="nom" id="nom" required maxlength="35" class="surnameInp" placeholder="Entrez votre nom">
                 </div>
                 <div>
                     <label for="objet" class="labelObject">Objet</label>
@@ -64,8 +64,8 @@
                 <a href="mailto:t.allusse@ecole-ipssi.net" class="contactEmail">
                     t.allusse@ecole-ipssi.net
                 </a>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44115.35371861524!2d5.141088571327774!3d46.28580985116639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f34effcc36adcf%3A0x408ab2ae4c21760!2s01340%20Attignat!5e0!3m2!1sfr!2sfr!4v1766310365593!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <a href="https://maps.app.goo.gl/4YSDyAZLBRfwkVAq9" class="contactAddress">01340 Attignat - FRANCE</a>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62381.31558545002!2d5.117635994968854!3d46.29214547639208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f34effcc36adcf%3A0x408ab2ae4c21760!2s01340%20Attignat!5e0!3m2!1sfr!2sfr!4v1769980148330!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <a href="https://maps.app.goo.gl/bBDJrnTv7ne7s6mM8" class="contactAddress">01340 Attignat - FRANCE</a>
             </div>
         </div>
     </section>

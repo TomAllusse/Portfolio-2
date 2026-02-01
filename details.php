@@ -163,7 +163,7 @@
 
             <!-- BUT -->
             <div class="formation-div droite">
-                <div class="card2 blue">
+                <div class="card2 blue blue1">
                     <h2 class="year">2021 - 2022</h2>
                     <h2 class="status blue-s">Réorientaion</h2>
                     <h3>BUT INFORMATIQUE</h3>
@@ -266,5 +266,4 @@
     ?>
     <script src="src/js/app.js"></script>
 </body>
-
 </html>
