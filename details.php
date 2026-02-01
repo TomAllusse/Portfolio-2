@@ -14,7 +14,7 @@
     ?>
     <section class="section-competences">
         <h4 class="tag">Compétences</h4>
-        <h1>Compétences <span>Acquise</span></h1>
+        <h1>Compétences <span>Acquises</span></h1>
         <div class="cards">
             <!-- Développement web et d'application -->
             <div class="card">
@@ -266,4 +266,5 @@
     ?>
     <script src="src/js/app.js"></script>
 </body>
+
 </html>
