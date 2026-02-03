@@ -138,6 +138,7 @@
 .formations {
     position: relative;
     width: 100%;
+    z-index: 0;
 }
 
 .formations::before {
@@ -145,10 +146,11 @@
     position: absolute;
     left: 50%;
     width: 4px;
-    height: 91.5%;
+    height: 95%;
     background: linear-gradient(#B6CDE8, #3c7df0);
     transform: translateX(-50%);
     border-radius: 10px;
+    
 }
 
 /* Items */
@@ -271,6 +273,8 @@
     border-radius: 20px;
     background: linear-gradient(180deg, #3c7df0, #B6CDE8);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 10;
 }
 
 /* Lien */

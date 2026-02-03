@@ -18,10 +18,11 @@
         <div class="option">
             <div id="slam">
                 <h3 id="title-slam">SLAM</h3>
-                <p class="paragraphe"><span>SLAM</span> signifie <span>« Solutions Logicielles et Applications Métiers »</span>.</p>
-                <p class="paragraphe">L’option SLAM est destinée aux étudiants qui s’orientent vers les métiers liés à la conception et à la maintenance de programmes applicatifs.</p>
-                <p class="paragraphe">Voici les débouchés :</p>
-                <ul class="ul-list">
+                <div class="container-bts">
+                    <p class="paragraphe"><span>SLAM</span> signifie <span>« Solutions Logicielles et Applications Métiers »</span>.</p>
+                    <p class="paragraphe">L’option SLAM est destinée aux étudiants qui s’orientent vers les métiers liés à la conception et à la maintenance de programmes applicatifs.</p>
+                </div>
+                <ul class="ul-list is-invisible">
                     <li class="list">Développeur d'applications informatiques</li>
                     <li class="list">Développeur informatique</li>
                     <li class="list">Analyste d'applications ou d'études</li>
@@ -33,13 +34,15 @@
                     <li class="list">Responsable des services applicatifs</li>
                     <li class="list">Technicien d'études informatiques</li>
                 </ul>
+                <div class="debouches is-visible"></div>
             </div>
             <div id="sisr">
                 <h3 id="title-sisr">SISR</h3>
-                <p class="paragraphe"><span>SISR</span> signifie <span>« Solutions d’Infrastructure, Systèmes et Réseaux »</span>.</p>
-                <p class="paragraphe">Assurer la sécurité, la maintenance et l’installation des réseaux et des équipements informatiques font partie des principales missions des futurs administrateurs, techniciens ou pilotes d’exploitation.</p>
-                <p class="paragraphe">Voici les débouchés :</p>
-                <ul class="ul-list">
+                <div class="container-bts">
+                    <p class="paragraphe"><span>SISR</span> signifie <span>« Solutions d’Infrastructure, Systèmes et Réseaux »</span>.</p>
+                    <p class="paragraphe">Assurer la sécurité, la maintenance et l’installation des réseaux et des équipements informatiques font partie des principales missions des futurs administrateurs, techniciens ou pilotes d’exploitation.</p>
+                </div>
+                <ul class="ul-list is-invisible">
                     <li class="list">Technicien de production</li>
                     <li class="list">Technicien d’infrastructure</li>
                     <li class="list">Technicien réseau et télécoms</li>
@@ -48,6 +51,7 @@
                     <li class="list">Pilote d’exploitation</li>
                     <li class="list">Informaticien support et déploiement</li>
                 </ul>
+                <div class="debouches is-visible"></div>
             </div>
         </div>
     </main>
@@ -55,5 +59,6 @@
         include_once "src/layout/footer.php";
     ?>
     <script src="src/js/app.js"></script>
+    <script src="src/js/appBTS.js"></script>
 </body>
 </html>

@@ -44,24 +44,47 @@
     border-bottom: 5px solid  rgba(182, 205, 232, 0.7);
 }
 
+.container-bts {
+    height: 200px;
+}
+
 #slam p, #sisr p {
-    margin: 10px;
+    margin: 25px 10px;
     color:#B6CDE8;
 }
 
 #slam ul, #sisr ul {
-    display: block;
-    padding-left: 50px;
+    height: 250px;
+    padding-left: 25px;
     color:#B6CDE8;
+}
+
+.debouches {
+    width: 100%;
+    height: 250px;
+    background-image: url(../images/other/DéBOUCHéES.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
 }
 
 #slam li, #sisr li {
     color:#B6CDE8;
+    margin-bottom: 5px;
 }
 
 #slam span, #sisr span {
     font-weight: bold;
     color:#B6CDE8;
+}
+
+.is-visible {
+    display: block;
+}
+
+.is-invisible {
+    display: none;
 }
 
 /* Responsive */
@@ -85,7 +108,7 @@
 
 }
 
-@media screen and (max-width: 1330px) {
+@media screen and (max-width: 1440px) {
     .paragraphe, .list, .paragraphe span{
         font-size: small;
     }
@@ -114,6 +137,10 @@
 
     #main-btssio {
         padding: 50px 20px;
+    }
+
+    .container-bts {
+        height: 100px;
     }
 }
 
@@ -146,6 +173,14 @@
     #slam ul, #sisr ul {
         padding-left: 25px;
     }
+
+    .container-bts {
+        height: 115px;
+    }
+
+    #slam ul, #sisr ul, .debouches {
+        height: 200px;
+    }
 }
 
 @media screen and (max-width: 425px) {    
@@ -160,6 +195,10 @@
 
     #title-slam, #title-sisr{
         margin-bottom: 0;
+    }
+
+    #slam ul, #sisr ul, .debouches {
+        height: 150px;
     }
 }
 
