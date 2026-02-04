@@ -1,6 +1,7 @@
 # Portfolio-2
 
 Installation et utilisation de composer
+
 Installation de PHPMailer et DotEnv
 
 Ajout d'un fichier .env contenant :
